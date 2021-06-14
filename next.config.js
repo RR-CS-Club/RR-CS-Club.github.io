@@ -12,4 +12,33 @@ module.exports = {
 
     return config;
   },
+  async redirects() {
+    return [
+      {
+        source: "/home",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/events",
+        destination: "/comingsoon",
+        permanent: true,
+      },
+      {
+        source: "/workshops",
+        destination: "/comingsoon",
+        permanent: true,
+      },
+      {
+        source: "/team",
+        destination: "/comingsoon",
+        permanent: true,
+      },
+      {
+        source: "/wall",
+        destination: "/comingsoon",
+        permanent: true,
+      },
+    ];
+  },
 };
