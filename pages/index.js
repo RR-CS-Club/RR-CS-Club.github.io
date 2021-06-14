@@ -55,7 +55,7 @@ export default function Home() {
             </span>
             .
           </div>
-          <section className={styles.buttonContainer}>
+          <div className={styles.buttonContainer}>
             <div
               onClick={() => window.open(apply_link, "_blank")}
               className={styles.button}>
@@ -66,7 +66,7 @@ export default function Home() {
               className={styles.button}>
               <h1 className='ContactText'>Contact</h1>
             </div>
-          </section>
+          </div>
         </section>
         <main className={styles.main}>
           <section className={styles.section}>
@@ -185,8 +185,10 @@ export default function Home() {
             </p>
           </section>
         </main>
-        <div id={styles.checkerDivider}></div>
-        <section className={styles.footer}>
+        <div id={styles.checkerDivider} title='Checker board divider'></div>
+        <section
+          className={styles.footer}
+          title='Circles wavelike pattern on top-left and bottom-right'>
           <h1 id={styles.bottomTitle}>Apply today to become a member.</h1>
           <h2 id={styles.bottomSubtitle}>
             It's completely online and takes under 10 minutes.

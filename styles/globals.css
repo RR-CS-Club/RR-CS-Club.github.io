@@ -103,7 +103,7 @@ a {
 }
 
 .soonButton {
-  margin-top: 51vw;
+  margin-top: 4vw;
   margin-left: 74.4vw;
   background-image: url("../public/soonButton.svg");
   background-position-x: center;
@@ -115,6 +115,15 @@ a {
   border-radius: 1.2vw;
   border: none;
   outline: none;
+}
+
+.soonTitle {
+  font-size: 4.46vw;
+  margin-top: 31vw;
+  margin-left: 48.2vw;
+  color: white;
+  width: 680px;
+  text-align: right;
 }
 
 #menuIcon {
@@ -157,7 +166,7 @@ a {
     top: 0;
     border-radius: 2vw;
     left: 2vw;
-    margin: 4.5vw 0vw;
+    margin: 30px 0vw;
     height: 25vw;
     background-color: rgba(2, 39, 60, 0.95);
 
@@ -204,6 +213,6 @@ a {
   }
 
   #navContainer {
-    height: 5vw;
+    height: 50px;
   }
 }

@@ -32,7 +32,7 @@
 .button {
   cursor: pointer;
   margin: 2.3vw 3vw;
-  font-size: 1.7vw;
+  font-size: 1.4vw;
   text-transform: uppercase;
   color: white;
   text-align: center;
@@ -56,6 +56,7 @@
 
 .footer {
   background-image: url("../public/BottomBg.svg");
+  background-color: black;
   background-size: cover;
   width: 100%;
   height: 43.3vw;
@@ -140,6 +141,7 @@
   display: flex;
   justify-content: center;
   padding-top: 1.2em;
+  font-size: 1.7vw;
 }
 
 #cardSection {
@@ -319,7 +321,7 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1150px) and (min-width: 652px) {
   .card {
     width: 28vw;
     height: 28vw;
@@ -333,18 +335,35 @@
     height: 4.2vw;
   }
 }
-
-@media only screen and (max-width: 652px) {
-  .bodyText {
-    font-size: 4vw;
+@media only screen and (max-width: 606px) {
+  #cardSection {
+    flex-direction: column;
   }
-
+}
+@media only screen and (max-width: 652px) {
+  .card {
+    width: 220px;
+    height: 220px;
+    border-radius: 30px;
+    margin: 5px;
+  }
+  .card p {
+    font-size: 15px;
+  }
+  .card h2 {
+    font-size: 19px;
+    height: 25px;
+  }
+  .bodyText {
+    font-size: 15px;
+    line-height: 1.5em;
+  }
   .sectionTitle {
-    font-size: 5.55vw;
+    font-size: 24px;
   }
 
   .sectionSubtitle {
-    font-size: 4.8vw;
+    font-size: 19px;
   }
 
   #titleMain {
@@ -370,9 +389,12 @@
     border-radius: 1vw;
     font-size: 2.1vw;
   }
+  .link {
+    padding: 0vw 1.5vw;
+  }
 }
 
-@media only screen and (max-width: 1267px) {
+@media only screen and (max-width: 1267px) and (min-width: 652px) {
   .bodyText {
     font-size: 2.13vw;
   }
@@ -420,5 +442,11 @@
   .card h2 {
     font-size: 2.5vw;
     height: 3.3vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .topSection {
+    margin-top: 50px;
   }
 }
