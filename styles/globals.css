@@ -1,9 +1,12 @@
+/** @format */
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Raleway;
+  overflow-x: hidden;
+  background-color: black;
 }
 
 a {
@@ -13,4 +16,194 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.navbar {
+  margin-top: -17px;
+  left: 0vw;
+  height: 1.5vw;
+  background-color: #02273c;
+  padding: 1.5vw;
+  box-shadow: 0px 0px 85px rgba(2, 39, 59, 0.8);
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 100;
+  color: white;
+  z-index: 1;
+}
+
+.NavItem {
+  position: relative;
+  cursor: pointer;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-size: 1.4vw;
+  letter-spacing: 0.115em;
+  text-transform: uppercase;
+
+  margin-right: 1.5em;
+  margin-left: 1.5em;
+  overflow-x: hidden;
+}
+
+.notFound {
+  background-image: url("../public/404Background.png"),
+    linear-gradient(
+      180deg,
+      rgba(0, 73, 158, 0.33) 23.29%,
+      rgba(0, 0, 0, 0) 70.59%
+    ),
+    linear-gradient(
+      180deg,
+      #049c66 0%,
+      rgba(0, 0, 0, 0.68) 41.67%,
+      #000000 95.83%
+    ),
+    linear-gradient(0deg, #009d65, #009d65);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 71vw;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.notFoundButton {
+  margin-top: 2.96vw;
+  background-image: url("../public/404Button.svg");
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  cursor: pointer;
+  width: 30vw;
+  height: 7vw;
+  border-radius: 1vw;
+  border: none;
+  outline: none;
+}
+
+.comingSoon {
+  margin-top: -4.8vw;
+  margin-left: -4.68vw;
+  background-color: #057295;
+  background-image: url("../public/soonBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 71vw;
+  width: 112.5vw;
+  display: flex;
+  justify-content: center;
+}
+
+.soonButton {
+  margin-top: 51vw;
+  margin-left: 74.4vw;
+  background-image: url("../public/soonButton.svg");
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  cursor: pointer;
+  width: 13.75vw;
+  height: 4.75vw;
+  border-radius: 1.2vw;
+  border: none;
+  outline: none;
+}
+
+#menuIcon {
+  display: none;
+}
+
+#navContainer {
+  background-color: rgb(2, 39, 60, 0.95);
+  width: 110vw;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+
+  z-index: 1;
+}
+
+::-webkit-scrollbar {
+  width: 0.6vw;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 45px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #073645;
+  border-radius: 45px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #02273c;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    border-radius: 2vw;
+    left: 2vw;
+    margin: 4.5vw 0vw;
+    height: 25vw;
+    background-color: rgba(2, 39, 60, 0.95);
+
+    padding: 1.5vw;
+    box-shadow: 0px 0px 85px rgba(2, 39, 59, 0.8);
+    text-align: center;
+    width: 20vw;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    color: white;
+    z-index: 1;
+  }
+
+  @keyframes grow {
+    0% {
+      max-height: 0;
+    }
+    100% {
+      max-height: 25vw;
+    }
+  }
+
+  #visible {
+    display: flex;
+
+    animation: 0.15s ease-in-out 1 grow;
+  }
+
+  #menuIcon {
+    display: block;
+    position: relative;
+    left: -48vw;
+    cursor: pointer;
+  }
+
+  .NavItem {
+    font-size: 1.8vw;
+    margin: 1vw;
+    overflow: hidden;
+  }
+
+  #navContainer {
+    height: 5vw;
+  }
 }

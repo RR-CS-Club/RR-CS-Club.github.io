@@ -1,15 +1,52 @@
+/** @format */
+
 .container {
-  min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
   align-items: center;
   height: 100vh;
 }
 
 .main {
-  padding: 5rem 0;
+  width: 100vw;
+  background: linear-gradient(
+    180deg,
+    #073645 0%,
+    rgba(11, 72, 91, 0.96) 18.95%,
+    rgba(11, 72, 92, 0.97) 72%,
+    rgba(12, 73, 92, 0.85) 100%,
+    rgba(12, 73, 92, 0.85) 100%
+  );
+  box-shadow: 0px -25px 85px 0px #bbf7db;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  cursor: pointer;
+  margin: 2.3vw 3vw;
+  font-size: 1.7vw;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  background-color: #2c3c54;
+  border-radius: 0.63vw;
+  background-image: url("../public/ButtonBg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 500px;
+  width: 15vw;
+  height: 6.905vw;
+}
+
+.main {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -18,19 +55,15 @@
 }
 
 .footer {
+  background-image: url("../public/BottomBg.svg");
+  background-size: cover;
   width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  height: 43.3vw;
 
-.footer a {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
 }
 
 .title a {
@@ -44,10 +77,176 @@
   text-decoration: underline;
 }
 
-.title {
+#titleMain {
+  padding-bottom: 5vw;
+  position: relative;
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 5vw;
+  color: #1d5b89;
+  text-transform: uppercase;
+  letter-spacing: 0.97vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  top: 0px;
+  height: 8vw;
+  justify-content: center;
+}
+
+#titleMain::after,
+#titleMain::before {
+  content: "Reagan CS Club";
+  position: relative;
+  z-index: -1;
+}
+
+#titleMain::after {
+  color: #b9ffb9;
+  width: 100%;
+  left: 0.5vw;
+  top: -5.7vw;
+}
+
+#titleMain::before {
+  color: #ffcbcb;
+  width: 100%;
+  right: 0.5vw;
+  top: 5.7vw;
+}
+
+#bottomTitle {
+  font-family: "Raleway";
+  font-size: 4vw;
+  background: linear-gradient(
+    90deg,
+    #f95151 2.59%,
+    #fff1a6 39.13%,
+    #a0e1c2 67.65%,
+    #057295 98.68%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+#bottomSubtitle {
+  font-size: 1.875vw;
+  font-family: "Roboto";
+  letter-spacing: 0.15em;
+  color: white;
+}
+
+#bottomButton {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.2em;
+}
+
+#cardSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#greenDivider {
+  height: 0.48vw;
+  background-color: #8bfec7;
+  width: 100vw;
+}
+
+#checkerDivider {
+  height: 2.86vw;
+  width: 100vw;
+  background-color: black;
+  background-image: url("../public/checkBg.svg");
+  background-size: contain;
+}
+
+.card {
+  background-color: white;
+  width: 331.5px;
+  height: 331.5px;
+  border-radius: 41.25px;
+  padding-top: 10px;
+}
+.card h2 {
+  color: white;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 36px;
+  background-color: #057295;
+  height: 51.2px;
+}
+
+.card p {
+  color: #0a3e4f;
+  text-align: center;
+  font-size: 22.5px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  margin: 0px 10px 0px 10px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  width: 95vw;
+}
+
+.sectionTitle {
+  font-size: 36px;
+  color: #76ffff;
+  text-transform: uppercase;
+  text-shadow: -0.42vw 0.42vw #411515;
+  font-weight: 900;
+  background-color: #057295;
+  border-radius: 0.9vw;
+  box-shadow: 0px 0.24vw 0.24vw 0px #00000040;
+  padding: 1.5vw;
+  width: fit-content;
+  margin: 3vw;
+}
+
+.sectionSubtitle {
+  color: white;
+  font-size: 31.5px;
+  font-family: "DM Sans";
+  text-align: center;
+  margin: 0px 0px 3vw 0px;
+}
+
+#beyondSubtitle {
+  margin-top: 3vw;
+  margin-bottom: 1.8vw;
+}
+
+.topSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 46.875vw;
+  background-color: #f4f4f4;
+  background-image: url("../public/TopBg.svg");
+
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  z-index: 0;
+}
+
+.bodyText {
+  font-size: 27px;
+  color: white;
+  font-family: Roboto;
+  font-weight: 300;
+  letter-spacing: 0.02em;
 }
 
 .title,
@@ -57,7 +256,40 @@
 
 .description {
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 2.5vw;
+  font-family: Courier Prime;
+  width: 75vw;
+  color: #424242;
+  padding-bottom: 3vw;
+}
+
+.pinkHighlight {
+  color: #c80379;
+  background-color: #ffc8df;
+  border-radius: 1.8vw;
+  font-weight: bold;
+}
+
+.greenHighlight {
+  color: #009fd1;
+  background-color: #c5ffdc;
+  border-radius: 1.8vw;
+  font-weight: bold;
+}
+
+.yellowHighlight {
+  color: #ffa011;
+  background-color: #fff1a6;
+  border-radius: 1.8vw;
+  font-weight: bold;
+}
+
+.link {
+  background-color: #20aecd;
+  border-radius: 1000000000px;
+  padding: 0px 10px 0px 10px;
+  cursor: pointer;
+  letter-spacing: 0.115em;
 }
 
 .code {
@@ -78,44 +310,115 @@
   margin-top: 3rem;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
 .logo {
   height: 1em;
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+#centerText {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1150px) {
+  .card {
+    width: 28vw;
+    height: 28vw;
+    border-radius: 3.5vw;
+  }
+  .card p {
+    font-size: 1.8vw;
+  }
+  .card h2 {
+    font-size: 3.1vw;
+    height: 4.2vw;
+  }
+}
+
+@media only screen and (max-width: 652px) {
+  .bodyText {
+    font-size: 4vw;
+  }
+
+  .sectionTitle {
+    font-size: 5.55vw;
+  }
+
+  .sectionSubtitle {
+    font-size: 4.8vw;
+  }
+
+  #titleMain {
+    font-size: 7vw;
+  }
+
+  #titleMain::after {
+    top: -8vw;
+  }
+
+  #titleMain::before {
+    top: 8vw;
+  }
+
+  .description {
+    font-size: 2.6vw;
+    width: 75vw;
+  }
+
+  .button {
+    width: 20vw;
+    height: 9.25vw;
+    border-radius: 1vw;
+    font-size: 2.1vw;
+  }
+}
+
+@media only screen and (max-width: 1267px) {
+  .bodyText {
+    font-size: 2.13vw;
+  }
+
+  .sectionTitle {
+    font-size: 2.87vw;
+  }
+
+  .sectionSubtitle {
+    font-size: 2.5vw;
+  }
+  .link {
+    padding: 0vw 0.6vw;
+  }
+}
+
+@media only screen and (min-width: 1850px) {
+  .bodyText {
+    font-size: 2.13vw;
+  }
+
+  .sectionTitle {
+    font-size: 2.87vw;
+  }
+
+  .sectionSubtitle {
+    font-size: 2.5vw;
+  }
+  .link {
+    padding: 0vw 0.6vw;
+  }
+
+  .section {
+    max-width: 2200px;
+    width: 85vw;
+  }
+  .card {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 2vw;
+  }
+  .card p {
+    font-size: 1.5vw;
+  }
+  .card h2 {
+    font-size: 2.5vw;
+    height: 3.3vw;
   }
 }
