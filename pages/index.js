@@ -12,6 +12,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
+        <script defer data-domain="rrcsclub.vercel.app" src="https://plausible.io/js/plausible.js"></script>
         <title>Ronald Reagan High School Computer Science Club</title>
         <meta
           name='description'
