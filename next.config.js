@@ -1,8 +1,8 @@
 /** @format */
 
 module.exports = {
-  basePath: '/rrcsclub',
-  assetPrefix: '/rrcsclub/',
+  basePath: '/',
+  assetPrefix: '//',
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
