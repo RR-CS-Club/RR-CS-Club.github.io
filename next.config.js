@@ -1,7 +1,7 @@
 /** @format */
 
 module.exports = {
-  basePath: '/',
+  basePath: '',
   assetPrefix: '//',
   webpack(config) {
     config.module.rules.push({
