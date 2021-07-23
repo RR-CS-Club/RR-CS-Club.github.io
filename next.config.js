@@ -8,6 +8,7 @@ module.exports = {
         test: /\.(js|ts)x?$/,
       },
       use: ["@svgr/webpack"],
+      
     });
 
     return config;
@@ -40,5 +41,9 @@ module.exports = {
         permanent: true,
       },
     ];
+  },
+  images: {
+    loader: "imgix",
+    path: "https://noop/",
   },
 };
