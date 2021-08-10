@@ -14,4 +14,4 @@ deploy:
   local_dir: out
   on:
     all_branches: true
-    condition: $TRAVIS_BRANCH = main
+    condition: $TRAVIS_BRANCH = =~ ^(master|main)$
